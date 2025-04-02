@@ -3,7 +3,9 @@ layout: default
 title: "Analyzing Key Objectives in Human-to-Robot Retargeting for Dexterous Manipulation"
 ---
 
-# Analyzing Key Objectives in Human-to-Robot Retargeting for Dexterous Manipulation
+<p style="text-align: center;"> 
+Submitted to <b>IEEE Robotics and Automation Practice</b>, 2025
+</p>
 
 <p style="text-align: center;"> 
 Chendong Xin*, 
@@ -28,8 +30,6 @@ Tsinghua University
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Dataset</a> |
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">CAD</a>
 </p>
-
-The paper has been submitted to IEEE Robotics and Automation Practice (RA-P).
 
 ## Video
 
