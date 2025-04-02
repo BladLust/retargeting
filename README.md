@@ -1,4 +1,4 @@
-# Retarget Benchmark
+# Retargeting
 
 ## Installation
 
@@ -34,7 +34,7 @@
    sudo apt-get install ros-humble-joint-state-publisher-gui
    ```
 
-1. Clone this repo: `git clone --recurse-submodules https://github.com/Mingrui-Yu/retarget_benchmark.git`
+1. Clone this repo: `git clone --recurse-submodules https://github.com/Mingrui-Yu/retargeting.git`
 
 1. Dependence of Leap Hand hardware: refer to [here](ws_ros2/src/leaphand_ros2_module/readme.md).
 
