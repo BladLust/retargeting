@@ -3,8 +3,14 @@ layout: default
 title: "Analyzing Key Objectives in Human-to-Robot Retargeting for Dexterous Manipulation"
 ---
 
+# Analyzing Key Objectives in Human-to-Robot Retargeting for Dexterous Manipulation
+
 <p style="text-align: center;"> 
-Chendong Xin*, Mingrui Yu*, Yongpeng Jiang, Zhefeng Zhang, and Xiang Li
+Chendong Xin*, 
+<a href="https://mingrui-yu.github.io/" style="color: #0ABAB5; text-decoration: underline;">Mingrui Yu</a>*,
+Yongpeng Jiang, 
+Zhefeng Zhang, 
+and Xiang Li
 </p>
 
 <p style="text-align: center;"> 
@@ -12,7 +18,11 @@ Tsinghua University
 </p>
 
 <p style="text-align: center;"> 
-<a href="https://mingrui-yu.github.io/retargeting/" style="color: #0ABAB5; text-decoration: underline;">arXiv</a> |
+(*Equal Contribution)
+</p>
+
+<p style="text-align: center;"> 
+<a href="https://mingrui-yu.github.io/retargeting/" style="color: #0ABAB5; text-decoration: underline;">arXiv (coming soon)</a> |
 <a href="./Appendix.pdf" style="color: #0ABAB5; text-decoration: underline;">Appendix</a> |
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Code</a> | 
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Dataset</a> |
@@ -20,8 +30,6 @@ Tsinghua University
 </p>
 
 The paper has been submitted to IEEE Robotics and Automation Practice (RA-P).
-
-The code, dataset, and CAD files will be released before April 6th, 2025.
 
 ## Video
 
