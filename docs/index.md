@@ -13,7 +13,7 @@ Tsinghua University
 
 <p style="text-align: center;"> 
 <a href="https://mingrui-yu.github.io/retargeting/" style="color: #0ABAB5; text-decoration: underline;">arXiv</a> |
-<a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Appendix</a> |
+<a href="./Appendix.pdf" style="color: #0ABAB5; text-decoration: underline;">Appendix</a> |
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Code</a> | 
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Dataset</a> |
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">CAD</a>
