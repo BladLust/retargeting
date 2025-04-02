@@ -21,6 +21,8 @@ Tsinghua University
 
 The paper has been submitted to IEEE Robotics and Automation Practice (RA-P).
 
+The code, dataset, and CAD files will be released before April 6th, 2025.
+
 ## Video
 
 <video controls style="width: 100%; height: auto;">
