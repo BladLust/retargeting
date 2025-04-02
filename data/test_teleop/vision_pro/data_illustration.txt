@@ -1,0 +1,18 @@
+origin trajectory
+index pinch
+middle pinch
+ring pinch
+index & middle pinch
+index pinch
+middle pinch
+ring pinch
+index & middle pinch
+middle & ring pinch
+index & middle & ring pinch
+each finger pinch once
+each finger pinch once (wrist rotate 30 degree)
+complex finger crossing movements
+finger bending
+pinch & grasp with less fingertip and more wrist displacement
+making fist & fully stretched & victory gesture
+making fist & fully stretched (wrist rotate 30 degree)
