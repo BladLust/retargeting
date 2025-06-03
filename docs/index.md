@@ -6,6 +6,9 @@ title: "Analyzing Key Objectives in Human-to-Robot Retargeting for Dexterous Man
 <p style="text-align: center;"> 
 Submitted to <b>IEEE Robotics and Automation Practice</b>, 2025
 </p>
+<p style="text-align: center;"> 
+Presented at ICRA 2025 Workshop"Handy Moves: Dexterity in Multi-Fingered Hands"
+</p>
 
 <p style="text-align: center;"> 
 Chendong Xin*, 
@@ -25,6 +28,7 @@ Tsinghua University
 
 <p style="text-align: center;"> 
 <a href="https://mingrui-yu.github.io/retargeting/" style="color: #0ABAB5; text-decoration: underline;">arXiv (coming soon)</a> |
+<a href="https://openreview.net/forum?id=ojCJehWjy7" style="color: #0ABAB5; text-decoration: underline;">ICRA Workshop</a> |
 <a href="./Appendix.pdf" style="color: #0ABAB5; text-decoration: underline;">Appendix</a> |
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Code</a> | 
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Dataset</a> |
