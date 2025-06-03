@@ -8,7 +8,7 @@ In this repository, we provide:
 
 - The human-to-robot retargeting algorithm.
 - The interface of human hand detection based on RGB image or Apple Vision Pro.
-- An Rviz-based visualizer to visualze the retargeting results.
+- An Rviz-based visualizer to visualize the retargeting results.
 
 <div align="center">
   <img src="./docs/overview.jpg" alt="retargeting" width="50%" />
@@ -92,14 +92,14 @@ If you want to do some customized development, such as adding new robots, please
    xacro src/my_robot_description/urdf/panda_leap_tac3d.xacro > src/my_robot_description/urdf/panda_leap_tac3d.urdf
    ```
 
-1. (Optional, for mujuco simulation) We use soft link to link [the urdf file generated from xacro in ROS workspace] to [the urdf file used for generating xml in mujoco folder]:
+1. (Optional, for mujoco simulation) We use soft link to link [the urdf file generated from xacro in ROS workspace] to [the urdf file used for generating xml in mujoco folder]:
 
    ```bash
    cd retarget_benchmark
    ln -s ws_ros2/src/my_robot_description/urdf/panda_leap_tac3d.urdf  assets/panda_leap_tac3d.urdf
    ```
 
-1. (Optional, for mujuco simulation) Convert .urdf to .xml and do related modifications:
+1. (Optional, for mujoco simulation) Convert .urdf to .xml and do related modifications:
 
    ```
    python ws_ros2/src/retargeting_benchmark/src/main_robot_file_process.py
