@@ -27,7 +27,7 @@ Tsinghua University
 </p>
 
 <p style="text-align: center;"> 
-<a href="https://mingrui-yu.github.io/retargeting/" style="color: #0ABAB5; text-decoration: underline;">arXiv (coming soon)</a> |
+<a href="https://arxiv.org/abs/2506.09384" style="color: #0ABAB5; text-decoration: underline;">arXiv</a> |
 <a href="https://openreview.net/forum?id=ojCJehWjy7" style="color: #0ABAB5; text-decoration: underline;">ICRA Workshop</a> |
 <a href="./Appendix.pdf" style="color: #0ABAB5; text-decoration: underline;">Appendix</a> |
 <a href="https://github.com/Mingrui-Yu/retargeting" style="color: #0ABAB5; text-decoration: underline;">Code</a> | 
@@ -50,6 +50,17 @@ This work aims to analyze these retargeting objectives for dexterous manipulatio
 Specifically, we propose a comprehensive retargeting objective formulation that integrates intuitively crucial factors appearing in recent approaches.
 The significance of each factor is evaluated through experimental ablation studies on the full objective in kinematic posture retargeting and real-world teleoperated manipulation tasks.
 Experimental results and conclusions provide valuable insights for designing more accurate and effective retargeting algorithms for real-world dexterous manipulation.
+
+## Citation
+
+```
+@article{xin2025analyzing,
+  title={Analyzing Key Objectives in Human-to-Robot Retargeting for Dexterous Manipulation},
+  author={Xin, Chendong and Yu, Mingrui and Jiang, Yongpeng and Zhang, Zhefeng and Li, Xiang},
+  journal={arXiv preprint arXiv:2506.09384},
+  year={2025}
+}
+```
 
 ## Contact
 
