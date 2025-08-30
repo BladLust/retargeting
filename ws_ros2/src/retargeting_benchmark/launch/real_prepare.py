@@ -11,7 +11,6 @@ from launch_ros.descriptions import ParameterValue
 
 
 def generate_launch_description():
-
     realsense_launch_path = os.path.join(get_package_share_directory("realsense2_camera"), "launch", "rs_launch.py")
 
     return LaunchDescription(
@@ -34,7 +33,8 @@ def generate_launch_description():
                     "rgb_camera.color_profile": "1280x720x30",
                     "camera_name": "camera1",
                     "camera_namespace": "camera1",
-                    "serial_no": "'238222076818'",
+                    # "serial_no": "'238222076818'",
+                    "serial_no": "'335222075636'",
                     "enable_infra1": "false",
                     "enable_infra2": "false",
                     "enable_emitter": "false",
@@ -50,7 +50,8 @@ def generate_launch_description():
                     "rgb_camera.color_profile": "1280x720x30",
                     "camera_name": "camera2",
                     "camera_namespace": "camera2",
-                    "serial_no": "'238222076841'",
+                    # "serial_no": "'238222076841'",
+                    "serial_no": "'233522074156'",
                     "enable_infra1": "false",
                     "enable_infra2": "false",
                     "enable_emitter": "false",

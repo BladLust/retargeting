@@ -60,7 +60,7 @@ class RobotTeleoperation:
         self.retarget_type = "VECTOR_WRIST_JOINT"  # "POSITION", "VECTOR", "DEXMV", "DEXPILOT", "VECTOR_WRIST_JOINT", "VECTOR_WRIST_JOINT_2"
         self.setting_id = 3
 
-        self.ablation_option = 8
+        self.ablation_option = 0
         # 0: full
         # 1: without pinch
         # 2: actual pinch distance
@@ -326,7 +326,6 @@ class RobotTeleoperation:
         wrist_quat = quatXYZW2WXYZ(sciR.from_matrix(wrist_pose_in_world[:3, :3]).as_quat())  # (w, x, y, z)
 
         if self.hand_type == "leap":
-
             ref_link_vec = np.zeros((12, 3))
             weights_links_vec = np.zeros((12))
             wrist_pos = hand_kps_in_world[0, :]
@@ -350,12 +349,12 @@ class RobotTeleoperation:
                 weights_links_vec[0] = 10.0
             # wrist-fingertip vector
             ref_link_vec[1:5, :] = hand_kps_in_world[MANO_FINGERTIP_INDEX[:4]] - wrist_pos
-            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:    
+            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:
                 weights_links_vec[1:5] = 1.0
             else:
                 weights_links_vec[1:5] = 1.0 * sigmoid_weights_wrist_fingertips
             # thumb-primary vector
-            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:    
+            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:
                 weights_links_vec[5:8] = 0.0
             elif self.ablation_option == 2:
                 ref_link_vec[5:8, :] = hand_kps_in_world[MANO_FINGERTIP_INDEX[1:4]] - thumb_tip.reshape(1, 3)
@@ -395,20 +394,20 @@ class RobotTeleoperation:
                 weights_joint_pos = np.zeros(23)
             else:  # [0, 0, 1.0, 0, 0.5, 0, 0]
                 weights_joint_pos = [0, 0, 1.0, 0, 0.5, 0, 0] + [
-                    0.5, # joint 0
+                    0.5,  # joint 0
                     0,
                     0,
                     0,
-                    0.5, # joint 4
+                    0.5,  # joint 4
                     0,
                     0,
                     0,
-                    0.5, # joint 8
+                    0.5,  # joint 8
                     0,
                     0,
-                    0.5, # joint 11
+                    0.5,  # joint 11
                     0,
-                    0.1, # joint 13
+                    0.1,  # joint 13
                     0,
                     0,
                 ]
@@ -453,12 +452,12 @@ class RobotTeleoperation:
                 weights_links_vec[0] = 10.0
             # wrist-fingertip vector
             ref_link_vec[1:6, :] = hand_kps_in_world[MANO_FINGERTIP_INDEX[:5]] - wrist_pos
-            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:    
+            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:
                 weights_links_vec[1:6] = 1.0
             else:
                 weights_links_vec[1:6] = 1.0 * sigmoid_weights_wrist_fingertips
             # thumb-primary vector
-            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:    
+            if self.ablation_option == 1 or self.ablation_option == 6 or self.ablation_option == 8:
                 weights_links_vec[6:10] = 0.0
             elif self.ablation_option == 2:
                 ref_link_vec[6:10, :] = hand_kps_in_world[MANO_FINGERTIP_INDEX[1:5]] - thumb_tip.reshape(1, 3)
@@ -500,24 +499,24 @@ class RobotTeleoperation:
                 weights_joint_pos = [0, 0, 1.0, 0, 0.5, 0, 0] + [
                     0,
                     0,
-                    0.5, # FF4
+                    0.5,  # FF4
                     0,
                     0,
                     0,
-                    0.5, # MF4
+                    0.5,  # MF4
                     0,
                     0,
                     0,
-                    0.5, # RF4
+                    0.5,  # RF4
                     0,
                     0,
                     0,
-                    0, # LF5
-                    0.5, # LF4
+                    0,  # LF5
+                    0.5,  # LF4
                     0,
                     0,
                     0,
-                    0.1, # TH5
+                    0.1,  # TH5
                     0,
                     0,
                     0,
@@ -581,7 +580,7 @@ class RobotTeleoperation:
                 ref_values["qpos_doa_last"][:7] = qpos_arm
                 qpos = self.optimizer.retarget(ref_values, qpos_arm)
                 qpos = np.concatenate([qpos_arm[:7], qpos[7:]])
-            
+
             elif self.hand_type == "shadow":
                 ref_link_vec
                 arm_ref_values = {
@@ -614,7 +613,9 @@ class RobotTeleoperation:
         position_err = self.robot_benchmark.position_error(qpos, hand_kps_in_world, 1)
         orientation_err = self.robot_benchmark.orientation_error(qpos, hand_kps_in_world, 1)
         relative_position_err = self.robot_benchmark.relative_position_error(qpos, hand_kps_in_world, 1)
-        relative_position_to_wrist_err = self.robot_benchmark.relative_position_to_wrist_error(qpos, hand_kps_in_world, 1)
+        relative_position_to_wrist_err = self.robot_benchmark.relative_position_to_wrist_error(
+            qpos, hand_kps_in_world, 1
+        )
 
         err = {
             "position_err": position_err,
@@ -637,7 +638,7 @@ class RobotTeleoperation:
 
 def main():
     urdf_file_name = os.readlink("assets/panda_leap_tac3d.urdf")  # no touch bodies/joints/sensors
-    actuated_joints_name = [f"panda_joint{i+1}" for i in range(7)] + [f"joint_{i}" for i in range(16)]
+    actuated_joints_name = [f"panda_joint{i + 1}" for i in range(7)] + [f"joint_{i}" for i in range(16)]
     touch_joints_name: List[str] = []
 
     robot_model = RobotPinocchio(

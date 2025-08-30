@@ -1,0 +1,11 @@
+source;share/ft_leap/hook/cmake_prefix_path.ps1
+source;share/ft_leap/hook/cmake_prefix_path.dsv
+source;share/ft_leap/hook/cmake_prefix_path.sh
+source;share/ft_leap/hook/ld_library_path_lib.ps1
+source;share/ft_leap/hook/ld_library_path_lib.dsv
+source;share/ft_leap/hook/ld_library_path_lib.sh
+source;share/ft_leap/local_setup.bash
+source;share/ft_leap/local_setup.dsv
+source;share/ft_leap/local_setup.ps1
+source;share/ft_leap/local_setup.sh
+source;share/ft_leap/local_setup.zsh

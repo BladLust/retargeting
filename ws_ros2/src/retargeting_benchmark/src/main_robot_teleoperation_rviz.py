@@ -16,7 +16,7 @@ from robot_adaptor import RobotAdaptor
 from robot_benchmark import RobotBenchmark
 from robot_control import RobotControl
 from robot_pinocchio import RobotPinocchio
-from robot_real import RobotReal
+from robot_real_rviz import RobotReal
 from robot_teleoperation import RobotTeleoperation
 from rviz_visualize import RvizVisualizer
 from utils.utils_keyboard import KeyboardListener
@@ -107,9 +107,9 @@ class RobotTeleoperationMain:
         self.input_device = "vision_pro"
         # self.input_device = "rgb"
         self.load_offline_data = False
-        self.use_hardware = True
+        self.use_hardware = False
         self.use_virtual_hardware = False
-        self.use_high_freq_interp = True
+        self.use_high_freq_interp = False
         self.use_ros = True
 
         if self.use_ros:

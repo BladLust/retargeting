@@ -7,7 +7,7 @@ import numpy as np
 import rclpy
 
 try:
-    from ft_leap.srv import LeapPosition, LeapPosVelEff
+    from leap_hand.srv import LeapPosition, LeapPosVelEff
 except ModuleNotFoundError as e:
     print(e)
 from builtin_interfaces.msg import Time
